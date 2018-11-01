@@ -1,0 +1,14 @@
+#include
+#include
+int main()
+{
+FILE * f = fopen(“9_digit_numerical.txt”, “w”);
+if(!f)
+return 1;
+for(int i=0;i<999999999;i++)
+{
+fprintf(f, "%09d\n", i);
+}
+fclose(f);
+return 0;
+}
